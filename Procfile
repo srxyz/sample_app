@@ -1,1 +1,1 @@
-web: bundle exec puma -S config/puma.rb
+web: bundle exec puma -C config/puma.rb
