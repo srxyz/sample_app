@@ -74,5 +74,6 @@ gem 'jquery-rails'
 
 group :production do
 	gem 'pg'
+	gem 'sqlite3'
 	gem 'fog'
 end

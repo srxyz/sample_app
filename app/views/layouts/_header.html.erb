@@ -1,7 +1,16 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
+    <div class="navbar-header">
+	<%= link_to "sample app", root_path, id: "logo", class:"navbar-brand" %>
+        <buton type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+     </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Help", help_path %></li>
@@ -22,6 +31,6 @@
 			<li><%= link_to "Log in", login_path %></li>
 		<% end %>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
